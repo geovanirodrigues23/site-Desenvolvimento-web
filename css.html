@@ -1,0 +1,134 @@
+css
+
+
+body{
+    background-image: url('Gemini_Generated_Image_73ozb973ozb973oz.png');
+
+    background-repeat: no-repeat;
+
+    background-position: center center;
+
+    background-size: cover;
+
+    color: white;
+
+    margin: 0;
+    font-family:'Times New Roman', Times, serif;
+    
+
+}
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+
+}
+
+a{
+    text-decoration: none;
+    color: #333;
+}
+h1{
+    text-align: center;
+}
+h2{
+    text-align: center ;
+}
+
+div{
+    text-align: right;
+    color: white;
+}
+
+li{
+    color: white;
+}
+
+.main-header {
+    /* Altura e posição relativa para posicionar as faixas de design */
+    height: 100px; 
+    position: relative;
+    background-color: black; 
+    overflow: hidden; /* Esconde partes das faixas que saem do header */
+    
+}
+
+.header-container {
+    /* Configuração Flex para alinhar o logo e a navegação */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    height: 100%;
+    position: relative; /* Garante que o conteúdo fique acima das faixas */
+    z-index: 2; /* Coloca o conteúdo em primeiro plano */
+}
+
+/* --- LOGO --- */
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 700;
+    color: rgba(15, 226, 15, 0.712);
+}
+
+.logo-icon {
+    /* Simula o ícone laranja com um círculo */
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: rgba(15, 226, 15, 0.712); /* muda a Cor do circulo */
+    border-radius: 50%;
+    margin-right: 10px;
+    /* Adiciona um efeito de gradiente/sombra suave para simular o "brilho" */
+    box-shadow: 0 0 5px rgba(255, 153, 51, 0.5); 
+}
+
+/* --- NAVEGAÇÃO (Menu) --- */
+.main-nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    font-size: 100px;
+}
+
+.main-nav ul {
+    display: flex;
+    gap: 25px;
+}
+
+.main-nav a {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 5px 0;
+    transition: color 0.3s;
+    font-size: 20px;
+}
+
+/* Estilo do item ativo (HOME) */
+.main-nav a.active {
+    color: rgba(15, 226, 15, 0.712)/* Cor laranja do design */
+}
+
+.main-nav a:hover {
+    color:rgba(15, 226, 15, 0.712);
+}
+
+.nav-icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 18px;
+    color: #999;
+    margin-left: 20px;
+}
+
+p a:hover{
+    text-align: center;
+    font-size: 20px;
+}

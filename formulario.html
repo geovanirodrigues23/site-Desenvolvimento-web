@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Contato Simples</title>
+    <link rel="shortcut icon" href="C:\Users\rgeov\Downloads\site Desenvolvimento web\registro-online.png" type="image/x-icon">
+    
+    <style>
+        /* Variáveis para cores */
+        :root {
+            --cor-fundo-principal: #1f1f1f; /* Fundo Escuro/Preto */
+            --cor-fundo-secundario: #2c2c2c; /* Fundo do Formulário */
+            --cor-destaque: #4CAF50; /* Verde Vibrante */
+            --cor-destaque-hover: #66BB6A; /* Verde Mais Claro */
+            --cor-texto: #e0e0e0; /* Cinza Claro para o Texto */
+            --cor-borda: #444; /* Borda dos Campos */
+        }
+
+        /* Estilo Básico do Corpo */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--cor-fundo-principal);
+            color: var(--cor-texto);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Estilo do Cabeçalho */
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 20px;
+            border-bottom: 2px solid var(--cor-destaque);
+            width: 100%;
+            max-width: 600px;
+        }
+
+        h1 {
+            color: var(--cor-destaque);
+            margin-bottom: 5px;
+        }
+
+        p {
+            color: var(--cor-texto);
+        }
+
+        /* Estilo Principal do Formulário */
+        form {
+            background-color: var(--cor-fundo-secundario);
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+            width: 100%;
+            max-width: 500px;
+        }
+
+        /* Labels */
+        label {
+            display: block;
+            margin-top: 15px;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: var(--cor-texto);
+        }
+        
+        /* Estilo para Campos de Texto, Email, Senha, Número e Textarea */
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="number"],
+        textarea {
+            width: 100%;
+            padding: 12px;
+            margin-top: 5px;
+            border: 1px solid var(--cor-borda);
+            border-radius: 4px;
+            box-sizing: border-box;
+            background-color: #383838; /* Um pouco mais claro que o fundo */
+            color: var(--cor-texto);
+            transition: border-color 0.3s, box-shadow 0.3s;
+        }
+
+        /* Foco nos campos */
+        input:focus,
+        textarea:focus {
+            border-color: var(--cor-destaque);
+            outline: none;
+            box-shadow: 0 0 5px rgba(76, 175, 80, 0.7); /* Brilho verde */
+        }
+
+        /* Placeholders */
+        ::placeholder {
+            color: #888;
+        }
+        
+        /* Estilo para Radio Buttons e Checkboxes */
+        /* Ajusta o alinhamento dos textos ao lado */
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 8px;
+        }
+
+        .form p {
+            margin-top: 20px;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: var(--cor-destaque); /* Destaque nas perguntas */
+        }
+        
+        /* Quebra de linha manual para os exemplos do formulário */
+        br + input[type="radio"],
+        br + input[type="checkbox"] {
+            margin-left: 0;
+            margin-top: 5px;
+        }
+
+        /* Estilo para Botões */
+        button {
+            padding: 12px 20px;
+            margin-right: 10px;
+            margin-top: 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 16px;
+            transition: background-color 0.3s, transform 0.1s;
+        }
+
+        /* Botão de Enviar (Verde) */
+        button[type="submit"] {
+            background-color: var(--cor-destaque);
+            color: var(--cor-fundo-secundario); /* Texto escuro */
+        }
+
+        button[type="submit"]:hover {
+            background-color: var(--cor-destaque-hover);
+        }
+
+        /* Botão de Limpar (Cinza/Preto) */
+        button[type="reset"] {
+            background-color: #444;
+            color: var(--cor-texto);
+        }
+        
+        button[type="reset"]:hover {
+            background-color: #555;
+        }
+
+        button:active {
+            transform: translateY(1px);
+        }
+
+        /* Estilo do Rodapé */
+        footer {
+            margin-top: 40px;
+            text-align: center;
+            padding: 10px 0;
+            color: #888; /* Cinza suave */
+        }
+    </style>
+    </head>
+<body>
+
+    <header>
+        <h1>Formulário de Contato</h1>
+        <p>Preencha os campos abaixo para entrar em contato conosco.</p>
+        
+    </header>
+
+    <form>
+
+        <label for="nome">Nome Completo:</label>
+        <input type="text" id="nome" name="nome" placeholder="Seu nome aqui">
+
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="seu.email@exemplo.com">
+
+
+
+        <label for="idade">Sua Idade:</label>
+        <input type="number" id="idade" name="idade" min="18" max="99" placeholder="Mínimo 18">
+
+
+        
+        </div>
+
+
+        <p>Quais linguagens de programação você conhece?</p>
+        <div>
+            <input type="checkbox" id="python" name="linguagem" value="python">
+            <label for="python" style="display: inline;">Python</label>
+        </div>
+        <div>
+            <input type="checkbox" id="java" name="linguagem" value="java">
+            <label for="java" style="display: inline;">Java</label>
+        </div>
+        <div>
+            <input type="checkbox" id="html_css" name="linguagem" value="html_css">
+            <label for="html_css" style="display: inline;">HTML/CSS</label>
+        </div>
+
+
+        <label for="mensagem">Deixe Seu Feedback:</label>
+        <textarea id="mensagem" name="mensagem" rows="5" placeholder="Digite sua mensagem aqui..."></textarea>
+
+        <button type="submit">Enviar Formulário</button>
+        <button type="reset">Limpar Campos</button>
+    </form>
+
+    
+    <a  href="index.html" style="color: #4CAF50; text-decoration:none;">clique aqui para voltar a página inicial </a>
+
+      
+    <footer>
+        <p style="font-size: 20px;"> Obrigado por seu contato!</p>
+    </footer>
+
+</body>
+</html>

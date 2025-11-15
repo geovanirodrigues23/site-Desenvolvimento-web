@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecionamento com Mensagem</title>
+</head>
+<body>
+
+    <button onclick="redirecionarComMensagem('outra_pagina.html')">
+        Ir para Outra Página
+    </button>
+
+    <script>
+        function redirecionarComMensagem(urlDestino) {
+            // 1. Exibe a mensagem de alerta (a "box" simples)
+            var confirmacao = alert("Você será redirecionado(a) a outra página! Clique em OK para continuar.");
+            
+            // 2. Realiza o redirecionamento
+            // A função alert() é bloqueante, então o redirecionamento só acontece
+            // após o usuário clicar em "OK".
+            window.location.href = urlDestino;
+        }
+    </script>
+
+</body>
+</html>
