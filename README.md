@@ -29,3 +29,4 @@ JavaScript (JS): Adiciona interatividade e dinamismo ao site, sendo usado para:
 Validação de Formulário: Garantindo que os dados inseridos pelos usuários estejam corretos antes do envio.
 
 Efeitos Visuais: Possíveis funcionalidades como carrosséis de imagens, menus de navegação retráteis ou interações ao passar o mouse.
+
